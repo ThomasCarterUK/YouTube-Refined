@@ -78,6 +78,21 @@ ytd-compact-link-renderer, ytd-toggle-theme-compact-link-renderer {
     border-radius: var(--yt-border-radius-medium);
 }
 
+/* SIDE FLYOUT CARDS */
+
+.iv-drawer-big.iv-drawer {
+    z-index: 930;
+}
+.iv-card, .iv-card a.iv-click-target, .iv-card a.iv-click-target:hover, .iv-card a.iv-click-target:focus {
+    border-radius: var(--yt-border-radius-medium);
+}
+.iv-card {
+    transition: transform 0.2s;
+}
+.iv-card:hover {
+    transform: scale(0.95);
+}
+
 /* ===== CHAT ===== */
 
 #chat.ytd-watch-flexy {
@@ -157,6 +172,13 @@ ytd-watch-next-secondary-results-renderer #items ytd-compact-video-renderer.prev
 /* ytd-watch-next-secondary-results-renderer #items ytd-compact-video-renderer.previously-watched-video.new-video {
     padding-bottom: 15px;
 } */
+
+ytd-compact-video-renderer {
+    transition: transform 0.2s;
+}
+ytd-compact-video-renderer:hover {
+    transform: translateX(10px)
+}
 
 /* ===== HOMEPAGE / THUMBNAILS ===== */
 
