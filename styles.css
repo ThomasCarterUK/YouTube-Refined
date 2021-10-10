@@ -80,6 +80,12 @@ ytd-compact-link-renderer, ytd-toggle-theme-compact-link-renderer {
     border-radius: var(--yt-border-radius-medium);
 }
 
+/* TOP INFO CARD */
+
+.ytp-cards-teaser .ytp-cards-teaser-box {
+    border-radius: 7px !important;
+}
+
 /* SIDE FLYOUT CARDS */
 
 .iv-drawer-big.iv-drawer {
