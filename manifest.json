@@ -1,7 +1,7 @@
 {
-    "name": "Rounded YouTube",
-    "description": "Updates the YouTube UI to rounded corners and additional tweaks.",
-    "version": "1.0",
+    "name": "YouTube Refined",
+    "description": "Updates the Desktop YouTube UI to have rounded corners and further enhancements and tweaks.",
+    "version": "1.0.0",
     "manifest_version": 3,
     "content_scripts": [
         {
