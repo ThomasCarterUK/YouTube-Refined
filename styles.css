@@ -137,6 +137,19 @@ ytd-comment-thread-renderer {
     border-radius: var(--yt-border-radius-medium);
     border: 1px solid var(--yt-border-opacity-07);
 }
+ytd-comment-thread-renderer #replies {
+    margin-top: 12px;
+    margin-bottom: -12px;
+}
+ytd-comment-thread-renderer #replies ytd-comment-renderer {
+    margin-bottom: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--yt-border-opacity-07);
+}
+ytd-continuation-item-renderer.ytd-comment-replies-renderer {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 
 /* ===== RELATED VIDEOS ===== */
 
