@@ -1,0 +1,20 @@
+{
+    "name": "Rounded YouTube",
+    "description": "Updates the YouTube UI to rounded corners and additional tweaks.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "css": [
+                "styles.css"
+            ],
+            "js": [
+                "docready.js",
+                "content.js"
+            ],
+            "matches": [
+                "https://www.youtube.com/*"
+            ]
+        }
+    ]
+}
