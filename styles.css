@@ -6,6 +6,8 @@
     --yt-border-radius-small: 5px;
     --yt-border-radius-medium: 10px;
     --yt-superchat-border-radius: 20px;
+    --yt-hover-animation-speed: 0.2s;
+    --yt-hover-scale-size: 0.95;
 }
 
 html:not([dark]) .ytd-app  {
@@ -87,10 +89,10 @@ ytd-compact-link-renderer, ytd-toggle-theme-compact-link-renderer {
     border-radius: var(--yt-border-radius-medium);
 }
 .iv-card {
-    transition: transform 0.2s;
+    transition: transform var(--yt-hover-animation-speed);
 }
 .iv-card:hover {
-    transform: scale(0.95);
+    transform: scale(var(--yt-hover-scale-size));
 }
 
 /* ===== CHAT ===== */
@@ -174,7 +176,7 @@ ytd-watch-next-secondary-results-renderer #items ytd-compact-video-renderer.prev
 } */
 
 ytd-compact-video-renderer {
-    transition: transform 0.2s;
+    transition: transform var(--yt-hover-animation-speed);
 }
 ytd-compact-video-renderer:hover {
     transform: translateX(10px)
@@ -195,6 +197,10 @@ ytd-browse[page-subtype="subscriptions"] ytd-grid-renderer ytd-grid-video-render
     padding: 8px 4px;
     width: 16.6% !important;
     box-sizing: border-box;
+    transition: transform var(--yt-hover-animation-speed);
+}
+ytd-browse[page-subtype="subscriptions"] ytd-grid-renderer ytd-grid-video-renderer:hover {
+    transform: scale(var(--yt-hover-scale-size));
 }
 ytd-browse[page-subtype="subscriptions"] ytd-grid-renderer ytd-grid-video-renderer ytd-thumbnail.ytd-grid-video-renderer {
     width: 100% !important;
